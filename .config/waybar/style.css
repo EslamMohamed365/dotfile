@@ -1,0 +1,70 @@
+* {
+  font-family: "Ubuntu Nerd Font", monospace;
+  color: #D8DEE9; /* Nord4 */
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+#workspaces {
+  background-color: rgba(46, 52, 64, 0.8); /* Nord0 avec transparence */
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #D8DEE9; /* Nord4 */
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+#workspaces button:first-child {
+  margin-left: 20px;
+}
+
+#workspaces button:last-child {
+  margin-right: 20px;
+}
+
+#workspaces button:hover {
+  background: #81A1C1; /* Nord9 */
+  color: #2E3440; /* Nord0 */
+}
+
+#clock {
+  background: #81A1C1; /* Nord9 */
+  color: #2E3440; /* Nord0 */
+  padding: 5px;
+  border-radius: 5px;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #81A1C1;
+  }
+  50% {
+    background-color: #88C0D0;
+  }
+  100% {
+    background-color: #81A1C1;
+  }
+}
+
+#cpu, #memory, #network, #battery {
+  background: #4C566A; /* Nord3 */
+  color: #ECEFF4; /* Nord6 */
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#battery {
+  background: #A3BE8C; /* Nord14 */
+  color: #2E3440; /* Nord0 */
+}
